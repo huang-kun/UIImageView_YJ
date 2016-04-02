@@ -1,0 +1,12 @@
+source 'https://github.com/CocoaPods/Specs.git'
+use_frameworks!
+
+target 'UIImageView_YJ_Example', :exclusive => true do
+  pod 'UIImageView_YJ', :path => '../'
+end
+
+target 'UIImageView_YJ_Tests', :exclusive => true do
+  pod 'UIImageView_YJ', :path => '../'
+
+  
+end
