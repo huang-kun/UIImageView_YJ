@@ -9,21 +9,15 @@
 Pod::Spec.new do |s|
   s.name             = "UIImageView_YJ"
   s.version          = "0.1.0"
-  s.summary          = "A short description of UIImageView_YJ."
-
-# This description is used to generate tags and improve search results.
-#   * Think: What does it do? Why did you write it? What is the focus?
-#   * Try to keep it short, snappy and to the point.
-#   * Write the description between the DESC delimiters below.
-#   * Finally, don't worry about the indent, CocoaPods strips it!  
+  s.summary          = "UIImageView_YJ is a UIImageView class extension that can use new contentMode to display it's contents."
   s.description      = <<-DESC
+UIImageView_YJ is a UIImageView class extension that can use new contentMode to display it's contents. Simply using yj_contentMode instead of contentMode.
                        DESC
-
-  s.homepage         = "https://github.com/<GITHUB_USERNAME>/UIImageView_YJ"
+  s.homepage         = "https://github.com/huang-kun/UIImageView_YJ"
   # s.screenshots     = "www.example.com/screenshots_1", "www.example.com/screenshots_2"
   s.license          = 'MIT'
   s.author           = { "huang-kun" => "jack-huang-developer@foxmail.com" }
-  s.source           = { :git => "https://github.com/<GITHUB_USERNAME>/UIImageView_YJ.git", :tag => s.version.to_s }
+  s.source           = { :git => "https://github.com/huang-kun/UIImageView_YJ.git", :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.platform     = :ios, '7.0'
@@ -34,7 +28,7 @@ Pod::Spec.new do |s|
     'UIImageView_YJ' => ['Pod/Assets/*.png']
   }
 
-  # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
+  s.public_header_files = 'Pod/Classes/**/*.h'
+  s.frameworks = 'UIKit'
   # s.dependency 'AFNetworking', '~> 2.3'
 end

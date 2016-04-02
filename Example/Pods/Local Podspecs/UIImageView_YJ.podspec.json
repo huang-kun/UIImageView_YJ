@@ -1,0 +1,25 @@
+{
+  "name": "UIImageView_YJ",
+  "version": "0.1.0",
+  "summary": "A short description of UIImageView_YJ.",
+  "description": "",
+  "homepage": "https://github.com/<GITHUB_USERNAME>/UIImageView_YJ",
+  "license": "MIT",
+  "authors": {
+    "huang-kun": "jack-huang-developer@foxmail.com"
+  },
+  "source": {
+    "git": "https://github.com/<GITHUB_USERNAME>/UIImageView_YJ.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "7.0"
+  },
+  "requires_arc": true,
+  "source_files": "Pod/Classes/**/*",
+  "resource_bundles": {
+    "UIImageView_YJ": [
+      "Pod/Assets/*.png"
+    ]
+  }
+}

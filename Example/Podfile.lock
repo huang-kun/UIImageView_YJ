@@ -1,0 +1,14 @@
+PODS:
+  - UIImageView_YJ (0.1.0)
+
+DEPENDENCIES:
+  - UIImageView_YJ (from `../`)
+
+EXTERNAL SOURCES:
+  UIImageView_YJ:
+    :path: ../
+
+SPEC CHECKSUMS:
+  UIImageView_YJ: bd8d5971a7b4b82d58f1bf44ae4263bfa652f558
+
+COCOAPODS: 0.39.0

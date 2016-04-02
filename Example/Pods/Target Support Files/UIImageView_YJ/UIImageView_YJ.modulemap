@@ -1,0 +1,6 @@
+framework module UIImageView_YJ {
+  umbrella header "UIImageView_YJ-umbrella.h"
+
+  export *
+  module * { export * }
+}
