@@ -18,7 +18,7 @@
 
 + (void)load {
     SEL fromSelector = @selector(setImage:);
-    SEL toSelector = @selector(_yj_setImage:);
+    SEL toSelector = @selector(yj_setImage:);
     
     Class class = [self class];
     
@@ -43,6 +43,7 @@
 - (void)setYj_contentMode:(YJViewContentMode)yj_contentMode {
     self.yj_contentModeEnabled = YES;
     objc_setAssociatedObject(self, @selector(yj_contentMode), @(yj_contentMode), OBJC_ASSOCIATION_RETAIN_NONATOMIC);
+    if (self.image) [self yj_redrawImage:self.image];
 }
 
 - (YJViewContentMode)yj_contentMode {
@@ -51,11 +52,12 @@
 
 #pragma mark - set image
 
-- (void)_yj_setImage:(UIImage *)image {
-    if (!self.yj_contentModeEnabled) {
-        [self _yj_setImage:image];
-        return;
-    }
+- (void)yj_setImage:(UIImage *)image {
+    self.yj_contentModeEnabled ? [self yj_redrawImage:image] : [self yj_setImage:image];
+}
+
+- (void)yj_redrawImage:(UIImage *)image {
+    if (!self.yj_contentModeEnabled) return;
     CGSize contextSize = self.bounds.size;
     CGRect imageRect = (CGRect){ CGPointZero, image.size };
     CGRect targetRect = (CGRect){ CGPointZero, contextSize };
@@ -64,7 +66,7 @@
     [image drawInRect:targetRect];
     UIImage *resizedImage = UIGraphicsGetImageFromCurrentImageContext();
     UIGraphicsEndImageContext();
-    [self _yj_setImage:resizedImage];
+    [self yj_setImage:resizedImage];
 }
 
 @end

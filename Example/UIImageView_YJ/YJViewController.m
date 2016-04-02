@@ -17,9 +17,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
     self.imageView.yj_contentMode = YJViewContentModeScaleAspectFit | YJViewContentModeTop;
-    self.imageView.image = [UIImage imageNamed:@"Octocat.png"];
 }
 
 @end

@@ -10,6 +10,7 @@
 		32F9BFA81CAF8AC7002415E3 /* Octocat.png in Resources */ = {isa = PBXBuildFile; fileRef = 32F9BFA71CAF8AC7002415E3 /* Octocat.png */; settings = {ASSET_TAGS = (); }; };
 		32F9BFAE1CAF8C9B002415E3 /* CGGeometry_YJExtension.c in Sources */ = {isa = PBXBuildFile; fileRef = 32F9BFAA1CAF8C9B002415E3 /* CGGeometry_YJExtension.c */; settings = {ASSET_TAGS = (); }; };
 		32F9BFAF1CAF8C9B002415E3 /* UIImageView+YJCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 32F9BFAD1CAF8C9B002415E3 /* UIImageView+YJCategory.m */; settings = {ASSET_TAGS = (); }; };
+		32F9BFB11CAFBBBC002415E3 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 32F9BFB01CAFBBBC002415E3 /* LaunchScreen.xib */; settings = {ASSET_TAGS = (); }; };
 		3D58EB08C221DC25BA1D488A /* Pods_UIImageView_YJ_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A63BE3A157FD606938DC255 /* Pods_UIImageView_YJ_Tests.framework */; };
 		6003F58E195388D20070C39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
 		6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58F195388D20070C39A /* CoreGraphics.framework */; };
@@ -45,6 +46,7 @@
 		32F9BFAB1CAF8C9B002415E3 /* CGGeometry_YJExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CGGeometry_YJExtension.h; sourceTree = "<group>"; };
 		32F9BFAC1CAF8C9B002415E3 /* UIImageView+YJCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+YJCategory.h"; sourceTree = "<group>"; };
 		32F9BFAD1CAF8C9B002415E3 /* UIImageView+YJCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+YJCategory.m"; sourceTree = "<group>"; };
+		32F9BFB01CAFBBBC002415E3 /* LaunchScreen.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LaunchScreen.xib; sourceTree = "<group>"; };
 		3A63BE3A157FD606938DC255 /* Pods_UIImageView_YJ_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UIImageView_YJ_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		43CFCE716D14CC6BBC041268 /* Pods-UIImageView_YJ_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UIImageView_YJ_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-UIImageView_YJ_Tests/Pods-UIImageView_YJ_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		5AD9CDAC74C8C26D3D6C406D /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
@@ -170,6 +172,7 @@
 				6003F595195388D20070C39A /* UIImageView_YJ-Info.plist */,
 				6003F596195388D20070C39A /* InfoPlist.strings */,
 				6003F599195388D20070C39A /* main.m */,
+				32F9BFB01CAFBBBC002415E3 /* LaunchScreen.xib */,
 				6003F59B195388D20070C39A /* UIImageView_YJ-Prefix.pch */,
 			);
 			name = "Supporting Files";
@@ -298,6 +301,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				32F9BFB11CAFBBBC002415E3 /* LaunchScreen.xib in Resources */,
 				873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */,
 				6003F5A9195388D20070C39A /* Images.xcassets in Resources */,
 				6003F598195388D20070C39A /* InfoPlist.strings in Resources */,
