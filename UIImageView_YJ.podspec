@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = "UIImageView_YJ"
-  s.version          = "0.0.1"
+  s.version          = "0.1.0"
   s.summary          = "UIImageView_YJ is a UIImageView class extension that can use new contentMode to display it's contents."
   s.description      = <<-DESC
 UIImageView_YJ is a UIImageView class extension that can use new contentMode to display it's contents. Simply using yj_contentMode instead of contentMode.
@@ -20,15 +20,11 @@ UIImageView_YJ is a UIImageView class extension that can use new contentMode to 
   s.source           = { :git => "https://github.com/huang-kun/UIImageView_YJ.git", :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
-  s.platform     = :ios, '7.0'
+  s.platform     = :ios, '6.0'
   s.requires_arc = true
 
-  s.source_files = 'Pod/Classes/**/*'
-  s.resource_bundles = {
-    'UIImageView_YJ' => ['Pod/Assets/*.png']
-  }
-
-  s.public_header_files = 'Pod/Classes/**/*.h'
+  s.source_files = 'UIImageView_YJ/**/*'
+  s.public_header_files = 'UIImageView_YJ/**/*.h'
   s.frameworks = 'UIKit'
   # s.dependency 'AFNetworking', '~> 2.3'
 end

@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		32F9BFA81CAF8AC7002415E3 /* Octocat.png in Resources */ = {isa = PBXBuildFile; fileRef = 32F9BFA71CAF8AC7002415E3 /* Octocat.png */; settings = {ASSET_TAGS = (); }; };
+		32F9BFAE1CAF8C9B002415E3 /* CGGeometry_YJExtension.c in Sources */ = {isa = PBXBuildFile; fileRef = 32F9BFAA1CAF8C9B002415E3 /* CGGeometry_YJExtension.c */; settings = {ASSET_TAGS = (); }; };
+		32F9BFAF1CAF8C9B002415E3 /* UIImageView+YJCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 32F9BFAD1CAF8C9B002415E3 /* UIImageView+YJCategory.m */; settings = {ASSET_TAGS = (); }; };
 		3D58EB08C221DC25BA1D488A /* Pods_UIImageView_YJ_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A63BE3A157FD606938DC255 /* Pods_UIImageView_YJ_Tests.framework */; };
 		6003F58E195388D20070C39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
 		6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58F195388D20070C39A /* CoreGraphics.framework */; };
@@ -37,6 +40,11 @@
 
 /* Begin PBXFileReference section */
 		27D80B704281821267327664 /* Pods-UIImageView_YJ_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UIImageView_YJ_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-UIImageView_YJ_Example/Pods-UIImageView_YJ_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		32F9BFA71CAF8AC7002415E3 /* Octocat.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Octocat.png; sourceTree = "<group>"; };
+		32F9BFAA1CAF8C9B002415E3 /* CGGeometry_YJExtension.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = CGGeometry_YJExtension.c; sourceTree = "<group>"; };
+		32F9BFAB1CAF8C9B002415E3 /* CGGeometry_YJExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CGGeometry_YJExtension.h; sourceTree = "<group>"; };
+		32F9BFAC1CAF8C9B002415E3 /* UIImageView+YJCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+YJCategory.h"; sourceTree = "<group>"; };
+		32F9BFAD1CAF8C9B002415E3 /* UIImageView+YJCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+YJCategory.m"; sourceTree = "<group>"; };
 		3A63BE3A157FD606938DC255 /* Pods_UIImageView_YJ_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UIImageView_YJ_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		43CFCE716D14CC6BBC041268 /* Pods-UIImageView_YJ_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UIImageView_YJ_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-UIImageView_YJ_Tests/Pods-UIImageView_YJ_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		5AD9CDAC74C8C26D3D6C406D /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
@@ -93,9 +101,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		32F9BFA91CAF8C9B002415E3 /* UIImageView_YJ */ = {
+			isa = PBXGroup;
+			children = (
+				32F9BFAA1CAF8C9B002415E3 /* CGGeometry_YJExtension.c */,
+				32F9BFAB1CAF8C9B002415E3 /* CGGeometry_YJExtension.h */,
+				32F9BFAC1CAF8C9B002415E3 /* UIImageView+YJCategory.h */,
+				32F9BFAD1CAF8C9B002415E3 /* UIImageView+YJCategory.m */,
+			);
+			name = UIImageView_YJ;
+			path = ../UIImageView_YJ;
+			sourceTree = "<group>";
+		};
 		6003F581195388D10070C39A = {
 			isa = PBXGroup;
 			children = (
+				32F9BFA91CAF8C9B002415E3 /* UIImageView_YJ */,
 				60FF7A9C1954A5C5007DD14C /* Podspec Metadata */,
 				6003F593195388D20070C39A /* Example for UIImageView_YJ */,
 				6003F5B5195388D20070C39A /* Tests */,
@@ -135,6 +156,7 @@
 				873B8AEA1B1F5CCA007FD442 /* Main.storyboard */,
 				6003F5A5195388D20070C39A /* YJViewController.h */,
 				6003F5A6195388D20070C39A /* YJViewController.m */,
+				32F9BFA71CAF8AC7002415E3 /* Octocat.png */,
 				6003F5A8195388D20070C39A /* Images.xcassets */,
 				6003F594195388D20070C39A /* Supporting Files */,
 			);
@@ -279,6 +301,7 @@
 				873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */,
 				6003F5A9195388D20070C39A /* Images.xcassets in Resources */,
 				6003F598195388D20070C39A /* InfoPlist.strings in Resources */,
+				32F9BFA81CAF8AC7002415E3 /* Octocat.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -392,6 +415,8 @@
 			files = (
 				6003F59E195388D20070C39A /* YJAppDelegate.m in Sources */,
 				6003F5A7195388D20070C39A /* YJViewController.m in Sources */,
+				32F9BFAE1CAF8C9B002415E3 /* CGGeometry_YJExtension.c in Sources */,
+				32F9BFAF1CAF8C9B002415E3 /* UIImageView+YJCategory.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
