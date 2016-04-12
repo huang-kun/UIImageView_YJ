@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = "UIImageView_YJ"
-  s.version          = "0.1.1"
+  s.version          = "0.1.2"
   s.summary          = "UIImageView_YJ is a UIImageView class extension that can use new contentMode to display it's contents."
   s.description      = <<-DESC
 UIImageView_YJ is a UIImageView class extension that can use new contentMode to display it's contents. Simply using yj_contentMode instead of contentMode.

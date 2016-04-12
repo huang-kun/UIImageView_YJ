@@ -17,17 +17,17 @@
 @implementation UIImageView (YJCategory)
 
 + (void)load {
-    SEL fromSelector = @selector(setImage:);
-    SEL toSelector = @selector(yj_setImage:);
-    
-    Class class = [self class];
-    
-    Method fromMethod = class_getInstanceMethod(class, fromSelector);
-    Method toMethod = class_getInstanceMethod(class, toSelector);
-    
-    BOOL added = class_addMethod(class, fromSelector, method_getImplementation(toMethod), method_getTypeEncoding(toMethod));
-    if (added) class_replaceMethod(class, toSelector, method_getImplementation(fromMethod), method_getTypeEncoding(fromMethod));
-    else method_exchangeImplementations(fromMethod, toMethod);
+    static dispatch_once_t onceToken;
+    dispatch_once(&onceToken, ^{
+        Class class = [self class];
+        SEL fromSelector = @selector(setImage:);
+        SEL toSelector = @selector(yj_setImage:);
+        Method fromMethod = class_getInstanceMethod(class, fromSelector);
+        Method toMethod = class_getInstanceMethod(class, toSelector);
+        BOOL added = class_addMethod(class, fromSelector, method_getImplementation(toMethod), method_getTypeEncoding(toMethod));
+        if (added) class_replaceMethod(class, toSelector, method_getImplementation(fromMethod), method_getTypeEncoding(fromMethod));
+        else method_exchangeImplementations(fromMethod, toMethod);
+    });
 }
 
 #pragma mark - yj_contentMode

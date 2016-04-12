@@ -9,10 +9,6 @@
 /* Begin PBXBuildFile section */
 		2D5DEC7323AA73EF8EDBE1F293A25652 /* UIImageView_YJ-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = EED4D776425BA4AD56B4C95BE251C004 /* UIImageView_YJ-dummy.m */; };
 		3044E9AF2BE695484678036F0588AFBE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */; };
-		32F9BFA31CAF86BD002415E3 /* CGGeometry_YJExtension.c in Sources */ = {isa = PBXBuildFile; fileRef = 32F9BF9F1CAF86BD002415E3 /* CGGeometry_YJExtension.c */; settings = {ASSET_TAGS = (); }; };
-		32F9BFA41CAF86BD002415E3 /* CGGeometry_YJExtension.h in Headers */ = {isa = PBXBuildFile; fileRef = 32F9BFA01CAF86BD002415E3 /* CGGeometry_YJExtension.h */; settings = {ASSET_TAGS = (); }; };
-		32F9BFA51CAF86BD002415E3 /* UIImageView+YJCategory.h in Headers */ = {isa = PBXBuildFile; fileRef = 32F9BFA11CAF86BD002415E3 /* UIImageView+YJCategory.h */; settings = {ASSET_TAGS = (); }; };
-		32F9BFA61CAF86BD002415E3 /* UIImageView+YJCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 32F9BFA21CAF86BD002415E3 /* UIImageView+YJCategory.m */; settings = {ASSET_TAGS = (); }; };
 		3BFBEBF6B71A4B0C9954D8766BD0E7E3 /* Pods-UIImageView_YJ_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B6FAED7B399418FCB08F1E5A41113DE4 /* Pods-UIImageView_YJ_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		67A55BFE1F2338913D68F9438B8E5A65 /* Pods-UIImageView_YJ_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E289BC007BC6BB08E79AAFCE933C9D20 /* Pods-UIImageView_YJ_Example-dummy.m */; };
 		7CB381E19E861BDCE8D4B67991703394 /* UIImageView_YJ-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = DF4ED83756E71002BFEFF771AA08CAAA /* UIImageView_YJ-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -54,10 +50,6 @@
 		130450F0F113FD98E607DCAB0C680A94 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2A05DE813741B676700E5CF5CCA93F49 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2A922C052E6A0C0CECACBDE696374909 /* UIImageView_YJ-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UIImageView_YJ-prefix.pch"; sourceTree = "<group>"; };
-		32F9BF9F1CAF86BD002415E3 /* CGGeometry_YJExtension.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = CGGeometry_YJExtension.c; sourceTree = "<group>"; };
-		32F9BFA01CAF86BD002415E3 /* CGGeometry_YJExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CGGeometry_YJExtension.h; sourceTree = "<group>"; };
-		32F9BFA11CAF86BD002415E3 /* UIImageView+YJCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+YJCategory.h"; sourceTree = "<group>"; };
-		32F9BFA21CAF86BD002415E3 /* UIImageView+YJCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+YJCategory.m"; sourceTree = "<group>"; };
 		3621BD819F4FD6725F0B94E4C9E8763D /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		395DC84C35984937846E91D5DFE25F8A /* Pods-UIImageView_YJ_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-UIImageView_YJ_Example-frameworks.sh"; sourceTree = "<group>"; };
 		3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
@@ -239,10 +231,6 @@
 		D8025ECF8B512BA0038CA200FA541A57 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				32F9BF9F1CAF86BD002415E3 /* CGGeometry_YJExtension.c */,
-				32F9BFA01CAF86BD002415E3 /* CGGeometry_YJExtension.h */,
-				32F9BFA11CAF86BD002415E3 /* UIImageView+YJCategory.h */,
-				32F9BFA21CAF86BD002415E3 /* UIImageView+YJCategory.m */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -262,9 +250,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				32F9BFA51CAF86BD002415E3 /* UIImageView+YJCategory.h in Headers */,
 				9FA9821FAB9E5248BC96E8FF821EBBCA /* Pods-UIImageView_YJ_Example-umbrella.h in Headers */,
-				32F9BFA41CAF86BD002415E3 /* CGGeometry_YJExtension.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -418,8 +404,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				32F9BFA31CAF86BD002415E3 /* CGGeometry_YJExtension.c in Sources */,
-				32F9BFA61CAF86BD002415E3 /* UIImageView+YJCategory.m in Sources */,
 				67A55BFE1F2338913D68F9438B8E5A65 /* Pods-UIImageView_YJ_Example-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
